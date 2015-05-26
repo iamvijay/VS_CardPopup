@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		733A30401B14A98B009DB5C4 /* Cardview.m in Sources */ = {isa = PBXBuildFile; fileRef = 733A303C1B14A98B009DB5C4 /* Cardview.m */; };
-		733A30411B14A98B009DB5C4 /* googleplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 733A303D1B14A98B009DB5C4 /* googleplus.png */; };
-		733A30421B14A98B009DB5C4 /* Instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 733A303E1B14A98B009DB5C4 /* Instagram.png */; };
-		733A30431B14A98B009DB5C4 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 733A303F1B14A98B009DB5C4 /* twitter.jpg */; };
+		733A30471B14B1F1009DB5C4 /* googleplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 733A30441B14B1F1009DB5C4 /* googleplus.png */; };
+		733A30481B14B1F1009DB5C4 /* Instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 733A30451B14B1F1009DB5C4 /* Instagram.png */; };
+		733A30491B14B1F1009DB5C4 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 733A30461B14B1F1009DB5C4 /* twitter.jpg */; };
+		733A304C1B14B1F9009DB5C4 /* Cardview.m in Sources */ = {isa = PBXBuildFile; fileRef = 733A304B1B14B1F9009DB5C4 /* Cardview.m */; };
 		735F70CB1ADA5A5900ABE17C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 735F70CA1ADA5A5900ABE17C /* main.m */; };
 		735F70CE1ADA5A5900ABE17C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 735F70CD1ADA5A5900ABE17C /* AppDelegate.m */; };
 		735F70D11ADA5A5900ABE17C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735F70D01ADA5A5900ABE17C /* ViewController.m */; };
@@ -31,11 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		733A303B1B14A98B009DB5C4 /* Cardview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cardview.h; path = "Source Files/Cardview.h"; sourceTree = "<group>"; };
-		733A303C1B14A98B009DB5C4 /* Cardview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cardview.m; path = "Source Files/Cardview.m"; sourceTree = "<group>"; };
-		733A303D1B14A98B009DB5C4 /* googleplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googleplus.png; path = "Source Images/googleplus.png"; sourceTree = "<group>"; };
-		733A303E1B14A98B009DB5C4 /* Instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Instagram.png; path = "Source Images/Instagram.png"; sourceTree = "<group>"; };
-		733A303F1B14A98B009DB5C4 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = twitter.jpg; path = "Source Images/twitter.jpg"; sourceTree = "<group>"; };
+		733A30441B14B1F1009DB5C4 /* googleplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googleplus.png; path = SourceImages/googleplus.png; sourceTree = "<group>"; };
+		733A30451B14B1F1009DB5C4 /* Instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Instagram.png; path = SourceImages/Instagram.png; sourceTree = "<group>"; };
+		733A30461B14B1F1009DB5C4 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = twitter.jpg; path = SourceImages/twitter.jpg; sourceTree = "<group>"; };
+		733A304A1B14B1F9009DB5C4 /* Cardview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cardview.h; path = SourceFiles/Cardview.h; sourceTree = "<group>"; };
+		733A304B1B14B1F9009DB5C4 /* Cardview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cardview.m; path = SourceFiles/Cardview.m; sourceTree = "<group>"; };
 		735F70C51ADA5A5900ABE17C /* VSCardView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSCardView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		735F70C91ADA5A5900ABE17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		735F70CA1ADA5A5900ABE17C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 		733A30391B1490A6009DB5C4 /* Source FIle */ = {
 			isa = PBXGroup;
 			children = (
-				733A303B1B14A98B009DB5C4 /* Cardview.h */,
-				733A303C1B14A98B009DB5C4 /* Cardview.m */,
+				733A304A1B14B1F9009DB5C4 /* Cardview.h */,
+				733A304B1B14B1F9009DB5C4 /* Cardview.m */,
 			);
 			name = "Source FIle";
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 		733A303A1B1490B6009DB5C4 /* Source Images */ = {
 			isa = PBXGroup;
 			children = (
-				733A303D1B14A98B009DB5C4 /* googleplus.png */,
-				733A303E1B14A98B009DB5C4 /* Instagram.png */,
-				733A303F1B14A98B009DB5C4 /* twitter.jpg */,
+				733A30441B14B1F1009DB5C4 /* googleplus.png */,
+				733A30451B14B1F1009DB5C4 /* Instagram.png */,
+				733A30461B14B1F1009DB5C4 /* twitter.jpg */,
 			);
 			name = "Source Images";
 			sourceTree = "<group>";
@@ -230,10 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				735F70D41ADA5A5900ABE17C /* Main.storyboard in Resources */,
-				733A30421B14A98B009DB5C4 /* Instagram.png in Resources */,
+				733A30481B14B1F1009DB5C4 /* Instagram.png in Resources */,
 				735F70D91ADA5A5900ABE17C /* LaunchScreen.xib in Resources */,
-				733A30431B14A98B009DB5C4 /* twitter.jpg in Resources */,
-				733A30411B14A98B009DB5C4 /* googleplus.png in Resources */,
+				733A30491B14B1F1009DB5C4 /* twitter.jpg in Resources */,
+				733A30471B14B1F1009DB5C4 /* googleplus.png in Resources */,
 				735F70D61ADA5A5900ABE17C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,7 +254,7 @@
 			files = (
 				735F70D11ADA5A5900ABE17C /* ViewController.m in Sources */,
 				735F70CE1ADA5A5900ABE17C /* AppDelegate.m in Sources */,
-				733A30401B14A98B009DB5C4 /* Cardview.m in Sources */,
+				733A304C1B14B1F9009DB5C4 /* Cardview.m in Sources */,
 				735F70CB1ADA5A5900ABE17C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
