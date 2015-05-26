@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Cardview.h"
+@interface ViewController : UIViewController<cradViewDelegate>
 
-@interface ViewController : UIViewController
-
+- (IBAction)showCardType1:(id)sender;
+- (IBAction)showCardType2:(id)sender;
+- (IBAction)showCardType3:(id)sender;
 
 @end
 
