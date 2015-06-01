@@ -1,77 +1,87 @@
 # Card Popup Message View
   
-  A good way to use bubble menu which is very simple and less time to integrate.
+  Better and efficient way to show popup to the user. It can be message popup or alertview popup 
  
 # Screen shots 
 
-
-
-  <img align="left" src="http://i.imgur.com/2CPvKTl.jpeg" alt="SS1" width="240" height="427"/>
-  <img align="center" src="http://i.imgur.com/52ZFGfZ.jpeg" alt="SS2" width="240" height="427"/>
-  <img align="center" src="http://i.imgur.com/n6fa5Z6.jpeg" alt="SS3" width="240" height="427"/>
-  <img align="center" src="http://i.imgur.com/whQp4Dq.jpeg" alt="SS3" width="240" height="427"/>
+  <img align="left" src="http://i.imgur.com/2CPvKTl.jpeg" alt="SS1" width="200" height="360"/>
+  <img align="center" src="http://i.imgur.com/52ZFGfZ.jpeg" alt="SS2" width="200" height="360"/>
+  <img align="center" src="http://i.imgur.com/n6fa5Z6.jpeg" alt="SS3" width="200" height="360"/>
+  <img align="center" src="http://i.imgur.com/whQp4Dq.jpeg" alt="SS3" width="200" height="360"/>
 
 
 # Installation
 
-Just drag and drop the "SubMenuAnimation.h" and "SubMenuAnimation.m" file from source files into your project, 
+Just drag and drop the "Cardview.h" and "Cardview.m" file from source files into your project, 
 and make sure you check the "Copy items into destination group's folder" box
 
-###### - Then import SubMenuAnimation.h and set the subMneuAnimationDelegate wherever you need it.
+###### - Then import Cardview.h and set the cradViewDelegate wherever you need it.
 
 ```objective-c
-#import "SubMenuAnimation.h"
+#import "Cardview.h"
 
-@interface MainViewController : UIViewController<subMneuANimationDelegate>
+@interface ViewController : UIViewController<cradViewDelegate>
 ```
 
 # Usage
 
-Creation is very simple just send the array of images and Button frame. Button frame will decide from where 
-the animation should start.
+Creation is very simple just send the message image , message title and button name. And for card type 2 you have send image and body of the messge.
 
-You dont want to change in frame anything. Keep button where ever you want in the screen bottom left or bottom right or center
+Card type 3 send message, image and button name and don forget to send your card type as int format.
 
 ```objective-c
-SubMenuAnimation *subMenu = [[SubMenuAnimation alloc]init];
-subMenu.delegate=self;
 
-NSArray *image  [[NSArray alloc]init];
-image = @[@"facebook.png",@"googleplus.png",@"twitter.png",@"youtube.png"];
+Cardview *card = [[Cardview alloc]init];
+card.delegate=self;
 
-[subMenu AnimateImages:image frame:Button.frame];
+- (IBAction)showCardType1:(id)sender {
+    NSString *body = @"The service, Google's fourth foray into social networking, experienced strong growth in its initial years, although usage statistics have varied, depending on how the service is defined.";
+    [card showPopupImage:[UIImage imageNamed:@"googleplus.png"] title:@"Google" Content:body ButtonDesc:@"Go to Next!" type:0];
+    [self.view addSubview:card];
+}
+
+- (IBAction)showCardType2:(id)sender {
+     NSString *body = @"Twitter helps you create and share ideas and information instantly, without barriers.Twitter is the best way to connect with people, express yourself and discover what's happening.";
+    [card showPopupImage:[UIImage imageNamed:@"twitter.jpg"] title:@"" Content:body ButtonDesc:@"Go!" type:1];
+    [self.view addSubview:card];
+}
+
+- (IBAction)showCardType3:(id)sender {
+     NSString *body = @"Instagram is not connected to the app so check properly before connecting it.";
+    [card showPopupImage:[UIImage imageNamed:@"Instagram.png"] title:@"" Content:body ButtonDesc:@"Dismiss" type:2];
+    [self.view addSubview:card];
+}
+
 ```
 
-As like above create object and create array of images. Then call the method with image array and button frame.
-Dont forget to set Delegate.
+As like above create object and send the image and text to be shown in the popup.
 
 If you want to change animation speed or timing change below values which is available in SubMenuAnimation.h.
 
 ```objective-c
-const CGFloat kDefaultAnimateDuration = 0.9f;
-const CGFloat kDefaultAnimateDelay = 0.35f;
-const CGFloat kDefaultSpringDamping = 0.53f;
-const CGFloat kDefaultSpringVelocity = 0.65f;
+const CGFloat kDefaultAnimateDuration = 0.95f;
+const CGFloat kDefaultAnimateDelay = 0.2f;
+const CGFloat kDefaultSpringDamping = 0.65f;
+const CGFloat kDefaultSpringVelocity = 0.12f;
 
-const int kDefaultMenuSize = 50;
+const CGFloat kSendBackViewAnimateDuration = 0.5f;
+const CGFloat kSendBackViewAnimateDelay = 0.15f;
+const CGFloat kSendBackViewSpringDamping = 0.48f;
 ```
 
 # Handling Delegate function
 
-So when you press any of those button delegate function will be get triggered in MainViewController. Using button tag 
-you can identify which button has been pressed so based on button tag you can do your logic.
+So when you press any of those button delegate function will be get triggered in ViewController. So from the delegate you can do your logic.
 
 ```objective-c
--(void)buttonIndexPressed:(int)buttonTag
+-(void)cradViewButtonAction
 {
-  NSLog(@"%d",buttonTag);
-  //Your logic goes here   
+    NSLog(@"Do your logic Here");
 }
 ```
-And tap the button to close menu.
 
-Note : This is my first library so please feel free to comment or even you can tell me if i have to improve anything
-or small mistakes in the coding. Thanks
+Note : This is my first try so please feel free to comment or even you can tell me if i have to improve anything
+or even small mistakes in the coding. Thanks
 
 # Get in touch
 If you want to contact me mail at vijays1107@gmail.com 
