@@ -6,9 +6,11 @@
 
 
 
-  <img align="left" src="https://i.imgflip.com/ma3rj.gif" alt="SS1" width="240" height="427"/>
-  <img align="center" src="http://i.imgur.com/mKpgnUB.jpeg" alt="SS2" width="240" height="427"/>
-  <img align="center" src="http://i.imgur.com/zUYUuIH.jpeg" alt="SS3" width="240" height="427"/>
+  <img align="left" src="http://i.imgur.com/2CPvKTl.jpeg" alt="SS1" width="240" height="427"/>
+  <img align="center" src="http://i.imgur.com/52ZFGfZ.jpeg" alt="SS2" width="240" height="427"/>
+  <img align="center" src="http://i.imgur.com/n6fa5Z6.jpeg" alt="SS3" width="240" height="427"/>
+  <img align="center" src="http://i.imgur.com/whQp4Dq.jpeg" alt="SS3" width="240" height="427"/>
+
 
 # Installation
 
